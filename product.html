@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Collections | Online Sneaker Shop</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar container">
+        <div class="nav-left">
+          <a href="index.html">
+            <img src="assets/icon/logo.svg" alt="Sneaker Logo" class="logo" />
+          </a>
+          <ul>
+            <li><a href="index.html">Collections</a></li>
+            <li><a href="product.html" class="active">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <div class="cart-btn">
+            <img src="assets/icon/icon-cart.svg" alt="Cart" />
+            <span id="cart-count">0</span>
+          </div>
+          <img
+            src="assets/Images/image-avatar.png"
+            alt="User Avatar"
+            class="avatar"
+          />
+        </div>
+      </nav>
+    </header>
+
+    <hr class="container divider" />
+
+    <main class="container">
+      <header class="page-title">
+        <h1>Men's Collections</h1>
+        <p>Find the best quality and trendy shoes for you.</p>
+      </header>
+      <div id="product-list" class="product-grid">
+        <div class="product-card">
+          <div class="product-img">
+            <img src="assets/Images/image-product-1.jpg" alt="Sneaker" />
+          </div>
+          <div class="product-info">
+            <span class="brand">Sneaker Company</span>
+            <h3>Fall Linited Edition Sneakers</h3>
+            <div class="price-row">
+              <span class="current-price">$125.00</span>
+              <span class="old-price">$250.00</span>
+            </div>
+            <button class="view-btn">View Details</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="container footer">
+      <p>&copy; 2026 Sneaker Company. All rights reserved.</p>
+    </footer>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>

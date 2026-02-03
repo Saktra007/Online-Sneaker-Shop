@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Sneaker Shop</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar container">
+        <div class="nav-left">
+          <img
+            src="assets/icon/logo.svg"
+            loading="lazy"
+            alt="Sneaker Logo"
+            class="logo"
+          />
+          <ul class="nav-links">
+            <li><a href="index.html">Collections</a></li>
+            <li><a href="product.html">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <div class="cart-btn" id="cart-icon">
+            <img src="assets/icon/icon-cart.svg" alt="Cart" />
+            <span id="cart-count">0</span>
+          </div>
+          <img
+            src="assets/Images/image-avatar.png"
+            alt="User Avatar"
+            class="avatar"
+          />
+        </div>
+      </nav>
+    </header>
+
+    <hr class="container divider" />
+
+    <main class="content container">
+      
+      <section class="gallery">
+        <div class="main-image">
+          <img
+            src="assets/Images/image-product-1.jpg"
+            id="main-img"
+            alt="Main Sneaker"
+          />
+        </div>
+        <div class="thumbnails">
+          <img
+            src="assets/Images/image-product-1-thumbnail.jpg"
+            class="thumb active"
+            data-index="0"
+          />
+          <img
+            src="assets/Images/image-product-2-thumbnail.jpg"
+            class="thumb"
+            data-index="1"
+          />
+          <img
+            src="assets/Images/image-product-3-thumbnail.jpg"
+            class="thumb"
+            data-index="2"
+          />
+          <img
+            src="assets/Images/image-product-4-thumbnail.jpg"
+            class="thumb"
+            data-index="3"
+          />
+        </div>
+      </section>
+
+      <aside class="product-details">
+        <span class="brand-name">Sneaker Company</span>
+        <h1 id="product-title">Fall Limited Edition Sneakers</h1>
+        <p class="description">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featurig a durable rubber outer sole,the'll withstand everything the
+          weather can offer.
+        </p>
+
+        <div class="price-container">
+          <div class="price-now">
+            <h1 id="price">$125.00</h1>
+            <span class="Discount">50%</span>
+          </div>
+          <h3 class="price-before">$250.00</h3>
+        </div>
+
+        <div class="purchase-actions">
+          <div class="quantity-selector">
+            <button id="minus" class="qty-btn">
+              <img src="assets/icon/icon-minus.svg" alt="minus" />
+            </button>
+            <input type="number" id="guantity" value="1" min="1" readonly />
+            <button id="plus" class="qty-btn">
+              <img src="assets/icon/icon-plus.svg" alt="plus" />
+            </button>
+          </div>
+
+          <button id="Order" class="add-to-cart">
+            <img
+              src="assets/icon/icon-cart.svg"
+              class="cart-icon-white"
+              alt=""
+            /><span>Add to cart</span>
+          </button>
+        </div>
+      </aside>
+
+    </main>
+
+    <script type="module" src="js/app.js"></script>
+
+  </body>
+</html>
